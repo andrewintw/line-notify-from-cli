@@ -69,7 +69,7 @@ The command example:
 
 or
 
-	$ ./line-notify.sh "hello LINE notify :-)"
+	$ echo "hello LINE notify :-)" | ./line-notify.sh
 
 
 the notification you got in LINE.
