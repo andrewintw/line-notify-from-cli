@@ -41,10 +41,30 @@ EOF
 }
 
 get_args () {
-	if [ "$notify_message" = '' ]; then
-		notify_message=$(</dev/stdin)
+	local msg=''
+	local timeout=20
+
+	if [ -p /dev/stdin ]; then	# ex: echo "your_message" | this.sh
+		print_dbg "debug>> stdin is coming from a pipe"
+		read -t $timeout msg
 	fi
-	
+
+	if [ -t 0 ]; then
+		print_dbg "debug>> stdin is coming from the terminal"
+		if [ "$notify_message" = "" ]; then
+			read -t $timeout -p "input message in $timeout seconds and press enter: " msg
+		else
+			msg="$notify_message"
+		fi
+	fi
+
+	if [ ! -t 0 ] && [ ! -p /dev/stdin ]; then # ex: this.sh < a_file 
+		print_dbg "debug>> stdin is redirected"
+		msg=$(</dev/stdin)
+	fi
+
+	print_dbg "debug>> msg=[$msg]"
+	notify_message="$msg"
 	print_dbg "debug>> notify_message=[$notify_message]"
 }
 
