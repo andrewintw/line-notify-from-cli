@@ -4,8 +4,6 @@
 # Curl Command: curl -X POST -H 'Authorization: Bearer [access_token]' -F 'message=foobar' https://notify-api.line.me/api/notify 
 #
 
-# Ex: curl -X POST -H 'Authorization: axNLJsrLOwRZCcJEKCeWlTGcSHbgYffMJjqHOCQatDj' -F 'message=foobar' https://notify-api.line.me/api/notify
-
 access_token='axNLJsrLOwRZCcJEKCeWlTGcSHbgYffMJjqHOCQatDj'	# replace with your personal access token.
 
 NOTIFY_API_URL='https://notify-api.line.me/api/notify'
@@ -68,19 +66,14 @@ get_args () {
 }
 
 send_notify () {
-	# Curl Command: curl -X POST -H 'Authorization: Bearer [access_token]' -F 'message=foobar' https://notify-api.line.me/api/notify
 	local ret_json=''
 	local ret_st=''
 	local ret_msg=''
 	local cmd_params=''
 
-	#cmd_params=" -F message=${notify_message} "
-
 	if [ "$is_show_img" = "1" ]; then
 		cmd_params+=" -F imageThumbnail=${IMG_URL} -F imageFullsize=${IMG_URL} "
 	fi
-
-	#curl -s -X POST -H "Authorization: Bearer $access_token" -F message="${notify_message}" $NOTIFY_API_URL
 
 	ret_json=`curl -s -X POST \
 		 -H "Authorization: Bearer $access_token" \
