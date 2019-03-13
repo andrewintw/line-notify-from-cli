@@ -10,6 +10,8 @@ For example, use the following command:
 	$ make; ./line-notify.sh "build is done"
 
 
+And I think this simple script could be integrated into an auto-build system in the future.
+
 ## How to use
 
 
@@ -18,6 +20,23 @@ For example, use the following command:
 Generating personal access tokens by navigating to [My page](https://notify-bot.line.me/my/) (LINE account required).
 
 for more details please visit the website: [Using LINE Notify to send messages to LINE from the command-line](https://engineering.linecorp.com/en/blog/using-line-notify-to-send-messages-to-line-from-the-command-line/)
+
+It actually only need 3 steps:
+
+Step1:
+
+![](images/acc-token-01.png)
+
+Step2:
+
+![](images/acc-token-02.png)
+
+Step3:
+
+![](images/acc-token-03.png)
+
+
+That's all!
 
 
 ### 2. Edit the script
