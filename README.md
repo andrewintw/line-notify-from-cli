@@ -45,7 +45,7 @@ The command example:
 the notification you got in LINE.
 
 
-![](images/line-notify-01.png)
+<img height="600" src="images/line-notify-01.png">
 
 
 #### case2: send multiple messages
@@ -74,7 +74,7 @@ The command example:
 the notification you got in LINE.
 
 
-![](images/line-notify-02.png)
+<img height="600" src="images/line-notify-02.png">
 
 
 ~ END ~
