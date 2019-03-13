@@ -38,7 +38,9 @@ EOF
 
 	which jq 1>/dev/null && is_jq_install=1 || is_jq_install=0
 	print_dbg "debug>> is_jq_install=[$is_jq_install]"
+}
 
+get_args () {
 	if [ "$notify_message" = '' ]; then
 		notify_message=$(</dev/stdin)
 	fi
@@ -95,7 +97,8 @@ do_done () {
 }
 
 do_main () {
-	do_init 	&& \
+	do_init     && \
+	get_args    && \
 	send_notify && \
 	do_done
 }
