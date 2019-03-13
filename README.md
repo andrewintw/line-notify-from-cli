@@ -12,6 +12,12 @@ For example, use the following command:
 
 And I think this simple script could be integrated into an auto-build system in the future.
 
+
+## Requestment
+
+All you need to use are the access token and line-notify.sh. I also suggest you run the script in Ubuntu Linux and use a bash environment. Not request to install the [jq](https://stedolan.github.io/jq/download/) package but that will be good if you can install it.
+
+
 ## How to use
 
 
