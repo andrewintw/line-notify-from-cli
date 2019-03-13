@@ -1,7 +1,7 @@
 # line-notify-from-cli
 
 
-## Where to use?
+## When to use?
 
 I study this topic is because when I do a full build in a compile server. That will be good if I can get a notify message when the build process is done.
 
