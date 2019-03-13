@@ -1,0 +1,10 @@
+hello~
+
+This is a test message from CLI
+ 
+    (Y)      /)_/)
+   (. .)    (.  .)
+ o(")(")   C(")(")
+
+multiline messages test :-)
+
