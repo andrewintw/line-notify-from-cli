@@ -67,6 +67,10 @@ The command example:
 
 	$ ./line-notify.sh "hello LINE notify :-)"
 
+or
+
+	$ ./line-notify.sh "hello LINE notify :-)"
+
 
 the notification you got in LINE.
 
@@ -79,15 +83,15 @@ the notification you got in LINE.
 You can prepare a file that including your messages. For example:
 
 
-	$ cat ex-msg.txt 
+	$ cat ex-msg.txt
 	hello~
-	
+
 	This is a test message from CLI
-	 
+
 	    (Y)      /)_/)
 	   (. .)    (.  .)
 	 o(")(")   C(")(")
-	
+
 	multiline messages test :-)
 
 

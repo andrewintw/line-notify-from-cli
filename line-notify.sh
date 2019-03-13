@@ -10,8 +10,7 @@ access_token='axNLJsrLOwRZCcJEKCeWlTGcSHbgYffMJjqHOCQatDj'	# replace with your p
 
 NOTIFY_API_URL='https://notify-api.line.me/api/notify'
 NOTIFY_API_DOC='https://engineering.linecorp.com/zh-hant/blog/using-line-notify-to-send-messages-to-line-from-the-command-line/'
-#IMG_URL='https://stickershop.line-scdn.net/stickershop/v1/sticker/25171929/ANDROID/sticker.png'
-IMG_URL='https://stickershop.line-scdn.net/stickershop/v1/sticker/10357056/ANDROID/sticker.png'
+IMG_URL='https://stickershop.line-scdn.net/stickershop/v1/sticker/22096/android/sticker.png'
 notify_message="$1"
 
 is_jq_install=0
