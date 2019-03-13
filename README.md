@@ -5,10 +5,11 @@
 
 I study this topic is because when I do a full build in a compile server. That will be good if I can get a notify message when the build process is done.
 
-For example, use the following command:
+For example, When I use the following command:
 
-	$ make; ./line-notify.sh "build is done"
+	$ make clean && make V=s; ./line-notify.sh "build is done"
 
+I would like to get the message "build is done" in my smartphone LINE app.
 
 And I think this simple script could be integrated into an auto-build system in the future.
 
