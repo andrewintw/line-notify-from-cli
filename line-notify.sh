@@ -92,10 +92,8 @@ send_notify () {
 		ret_st=`echo $ret_json | jq -r '.status'`
 		ret_msg=`echo $ret_json | jq -r '.message'`
 	else
-
 		ret_st=`echo $ret_json | sed -e 's/[{}]/''/g' | awk -F ',' '{print $1}' | awk -F ':' '{print $2}'`
 		ret_msg=`echo $ret_json | sed -e 's/[{}]/''/g' | awk -F ',' '{print $2}' | awk -F ':' '{print $2}'`
-
 	fi
 	print_dbg "debug>> status=[$ret_st] message=[$ret_msg]"
 	if [ "$ret_st" != "200" ]; then
@@ -116,4 +114,3 @@ do_main () {
 }
 
 do_main
-
