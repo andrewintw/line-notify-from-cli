@@ -1,8 +1,9 @@
 #! /bin/sh
+# Author: <https://github.com/andrewintw>
+# Copyright (C) 2023 <https://github.com/andrewintw>
 #
 # LINE Doc:     https://engineering.linecorp.com/zh-hant/blog/using-line-notify-to-send-messages-to-line-from-the-command-line/
 # Curl Command: curl -X POST -H 'Authorization: Bearer [access_token]' -F 'message=foobar' https://notify-api.line.me/api/notify 
-#
 
 access_token='axNLJsrLOwRZCcJEKCeWlTGcSHbgYffMJjqHOCQatDj'	# replace with your personal access token.
 
